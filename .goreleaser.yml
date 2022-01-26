@@ -15,6 +15,7 @@ builds:
     - arm64
 dockers:
   -
+    use: buildx
     image_templates:
     - "push.soh.re/servmon:{{ .Tag }}"
     - "push.soh.re/servmon:latest"
@@ -30,6 +31,7 @@ dockers:
       - "--label=org.opencontainers.image.source={{.GitURL}}"
       - "--platform=linux/amd64"
   -
+    use: buildx
     image_templates:
     - "push.soh.re/servmon:{{ .Tag }}-arm64"
     - "push.soh.re/servmon:latest-arm64"

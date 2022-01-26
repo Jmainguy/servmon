@@ -1,0 +1,69 @@
+<html>
+<head>
+</head>
+<style>
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+</style>
+<center>
+
+<body>
+    <h1>TCP Connection</h1>
+<table style="width:50%" class="sortable">
+<tr>
+  <th>Hostname</th>
+  <th>Port</th>
+</tr>
+{{ range . }}
+{{ if .TCP.Ports }}
+<tr>
+<td>{{ .TCP.Hostname }}</td>
+<td>
+{{ range .TCP.Ports }}
+{{ $network := "ipv4" }}
+{{ if eq .Network "tcp6" }}
+{{ $network = "ipv6" }}
+{{ end }}
+{{ $img := "https://status.aws.amazon.com/images/status0.gif" }}
+{{ if eq .Status "down" }}
+{{ $img = "https://status.aws.amazon.com/images/status3.gif" }}
+{{ end }}
+<b>{{ .Port }}</b> {{ $network }} <img src="{{ $img }}" />
+<br>
+{{ end }}
+</td>
+</tr>
+{{ end }}
+{{ end }}
+</table>
+<h1>HTTP Connection</h1>
+<table style="width:50%" class="sortable">
+<tr>
+  <th>Hostname</th>
+  <th>Status</th>
+</tr>
+{{ range . }}
+{{ if .HTTP.Status }}
+<tr>
+<td><a href={{ .HTTP.URL }}>{{ .HTTP.URL }}</a></td>
+<td>
+    {{ $img := "https://status.aws.amazon.com/images/status0.gif" }}
+    {{ if eq .HTTP.Status "down" }}
+    {{ $img = "https://status.aws.amazon.com/images/status3.gif" }}
+    {{ end }}
+    <img src="{{ $img }}" />
+</td>
+</tr>
+{{ end }}
+{{ end }}
+</body>
+</center>
+</html>

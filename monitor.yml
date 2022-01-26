@@ -1,0 +1,167 @@
+---
+
+- service:
+  http:
+    url: "https://jmainguy.com/"
+    statuscode: 200
+- service:
+  http:
+    url: "https://hey.soh.re"
+    statuscode: 200
+- service:
+  http:
+    url: "https://ip.jmainguy.com"
+    statuscode: 200
+- service:
+  http:
+    url: "https://standouthost.com"
+    statuscode: 200
+- service:
+  http:
+    url: "https://vpsaddict.com"
+    statuscode: 200
+- service:
+  http:
+    url: "https://graceproviders.com"
+    statuscode: 200
+- service:
+  http:
+    url: "https://znc.soh.re"
+    statuscode: 200
+- service:
+  http:
+    url: "https://etherpad.soh.re"
+    statuscode: 200
+- service:
+  http:
+    url: "https://statuscode.soh.re/200"
+    statuscode: 200
+- service:
+  http:
+    url: "https://whois.soh.re"
+    statuscode: 200
+- service:
+  http:
+    url: "https://nextcloud.soh.re"
+    statuscode: 200
+- service:
+  http:
+    url: "https://southridingagent.com"
+    statuscode: 200
+- service:
+  http:
+    url: "https://southridingagents.com"
+    statuscode: 200
+- service:
+  http:
+    url: "https://rightwaypropertycare.com"
+    statuscode: 200
+- service:
+  http:
+    url: "https://soh.re"
+    statuscode: 200
+- service:
+  http:
+    url: "https://flights.soh.re"
+    statuscode: 200
+
+- service:
+  tcp:
+    hostname: mail.soh.re
+    ports: 
+      - port: 25
+        network: tcp4
+      - port: 25
+        network: tcp6
+      - port: 465
+        network: tcp4
+      - port: 465
+        network: tcp6
+      - port: 993
+        network: tcp4
+      - port: 993
+        network: tcp6
+
+- service:
+  tcp:
+    hostname: phy01.standouthost.com
+    ports: 
+      - port: 22
+        network: tcp4
+      - port: 22
+        network: tcp6
+      - port: 80
+        network: tcp4
+      - port: 80
+        network: tcp6
+      - port: 443
+        network: tcp4
+      - port: 443
+        network: tcp6
+      - port: 3306
+        network: tcp4
+      - port: 3306
+        network: tcp6
+
+- service:
+  tcp:
+    hostname: ns1.vpsaddict.com
+    ports: 
+      - port: 22
+        network: tcp4
+      - port: 22
+        network: tcp6
+      - port: 53
+        network: tcp4
+      - port: 53
+        network: tcp6
+      - port: 443
+        network: tcp4
+
+- service:
+  tcp:
+    hostname: ns3.vpsaddict.com
+    ports:
+      - port: 22
+        network: tcp4
+      - port: 22
+        network: tcp6
+      - port: 53
+        network: tcp4
+      - port: 53
+        network: tcp6
+      - port: 443
+        network: tcp4
+
+- service:
+  tcp:
+    hostname: ns2.vpsaddict.com
+    ports: 
+      - port: 22
+        network: tcp4
+      - port: 22
+        network: tcp6
+      - port: 53
+        network: tcp4
+      - port: 53
+        network: tcp6
+
+- service:
+  tcp:
+    hostname: openvpn.soh.re
+    ports: 
+      - port: 22
+        network: tcp4
+      - port: 22
+        network: tcp6
+      - port: 443
+        network: tcp4
+
+- service:
+  tcp:
+    hostname: home.soh.re
+    ports: 
+      - port: 80
+        network: tcp4
+      - port: 443
+        network: tcp4

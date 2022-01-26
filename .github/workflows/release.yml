@@ -19,6 +19,13 @@ jobs:
             with:
               go-version: '1.17'
 
+          - name: Login to push.soh.re
+            uses: docker/login-action@v1
+            with:
+              registry: push.soh.re
+              username: ${{ secrets.SOHRE_USERNAME }}
+              password: ${{ secrets.SOHRE_PASSWORD }}
+
           - name: Run GoReleaser
             uses: goreleaser/goreleaser-action@v2
             with:

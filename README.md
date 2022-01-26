@@ -30,11 +30,13 @@ brew install Jmainguy/tap/servmon
 
 ### Podman
 ```/bin/bash
-podman run --name servmon -Pd \
+# if running podman on arm64
+podman run --name servmon -d \
+  -p 8080:8080 \
   -v $(pwd)/monitor.yml:/monitor.yml \
-  --env SLACK_TOKEN=adssadasasdsa \
-  --env SLACK_CHANNEL=C02U1PAFP8Q
-  hub.soh.re/servmon
+  --env SLACK_TOKEN=xoxb-1986333393-gRNl6nANyVXhSGKJGDc9QHsa \
+  --env SLACK_CHANNEL=C02U1PAFP8Q \
+  hub.soh.re/servmon:latest-arm64
 ```
 
 ## Build

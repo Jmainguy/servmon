@@ -2,7 +2,7 @@
 
 - service:
   http:
-    url: "https://jmainguy.com/"
+    url: "https://jmainguy.com"
     statuscode: 200
 - service:
   http:
@@ -19,10 +19,6 @@
 - service:
   http:
     url: "https://vpsaddict.com"
-    statuscode: 200
-- service:
-  http:
-    url: "https://graceproviders.com"
     statuscode: 200
 - service:
   http:

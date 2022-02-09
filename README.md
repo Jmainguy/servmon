@@ -17,6 +17,8 @@ export SLACK_CHANNEL=C02U1PAFP8Q
 servmon
 ```
 
+**NOTE:** In order for `servmon` to function you'll also need to put a `monitor.yml` file and the `template.html` file in the directory specified by `$SERVMONDIR`. Examples of both are included in this repository.
+
 ## PreBuilt Binaries
 Grab Binaries from [The Releases Page](https://github.com/Jmainguy/servmon/releases)
 
@@ -38,6 +40,15 @@ podman run --name servmon -d \
   --env SLACK_CHANNEL=C02U1PAFP8Q \
   hub.soh.re/servmon:latest-arm64
 ```
+
+## Example
+After starting up `servmon` a status page will b available at `http://localhost:8080` as shown below:
+
+![screenshot of status page](imgs/image01.png)
+
+`servmon` also keeps a log of access attempts which looks like this:
+
+![screenshot of log messages](imgs/image02.png)
 
 ## Build
 ```/bin/bash

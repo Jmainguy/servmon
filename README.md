@@ -44,11 +44,11 @@ podman run --name servmon -d \
 ## Example
 After starting up `servmon` a status page will b available at `http://localhost:8080` as shown below:
 
-<p align="center"><img src="imgs/image01.png"></p>
+<p align="center"><img width="450" height="250" src="imgs/image01.png"></p>
 
 `servmon` also keeps a log of access attempts which looks like this:
 
-<p align="center"><img src="imgs/image02.png"></p>
+<p align="center"><img width="450" height="250" src="imgs/image02.png"></p>
 
 ## Build
 ```/bin/bash

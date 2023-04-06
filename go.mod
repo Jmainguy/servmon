@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/gin-gonic/gin v1.9.0
-	github.com/slack-go/slack v0.10.1
+	github.com/slack-go/slack v0.12.1
 	gopkg.in/yaml.v3 v3.0.1
 )
 

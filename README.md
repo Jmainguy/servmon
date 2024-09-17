@@ -22,14 +22,6 @@ servmon
 ## PreBuilt Binaries
 Grab Binaries from [The Releases Page](https://github.com/Jmainguy/servmon/releases)
 
-## Install
-
-### Homebrew
-
-```/bin/bash
-brew install Jmainguy/tap/servmon
-```
-
 ### Podman
 ```/bin/bash
 # if running podman on arm64
@@ -52,6 +44,5 @@ After starting up `servmon` a status page will b available at `http://localhost:
 
 ## Build
 ```/bin/bash
-export GO111MODULE=on
 go build
 ```

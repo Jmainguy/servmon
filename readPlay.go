@@ -1,14 +1,14 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
+	"os"
 
 	"gopkg.in/yaml.v3"
 )
 
 func readPlay(filename string) (services services) {
-	yamlFile, err := ioutil.ReadFile(filename)
+	yamlFile, err := os.ReadFile(filename)
 	if err != nil {
 		log.Fatalf("yamlFile.Get err   #%v ", err)
 	}

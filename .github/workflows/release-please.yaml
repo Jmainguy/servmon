@@ -1,0 +1,16 @@
+name: Call Reusable Golang Release-Please Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    uses: Jmainguy/golang-workflows/.github/workflows/golang-release.yml@v1
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+      docker_username: ${{ secrets.DOCKER_USERNAME }}
+      docker_password: ${{ secrets.DOCKER_PASSWORD }}
+    with:
+      docker_url: push.soh.re

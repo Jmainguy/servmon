@@ -3,7 +3,7 @@ module github.com/jmainguy/servmon
 go 1.23.1
 
 require (
-	github.com/gin-gonic/gin v1.10.0
+	github.com/gin-gonic/gin v1.10.1
 	github.com/slack-go/slack v0.15.0
 	gopkg.in/yaml.v3 v3.0.1
 )

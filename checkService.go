@@ -24,7 +24,10 @@ func checkHTTPService(servHTTP servHTTP, retryMap map[string]int) (servHTTP, map
 		retryMap[servHTTP.URL]++
 
 	}
-	resp.Body.Close()
+	// Check error from resp.Body.Close()
+	if cerr := resp.Body.Close(); cerr != nil {
+		log.Println("error closing response body:", cerr)
+	}
 	return servHTTP, retryMap
 }
 
@@ -40,7 +43,10 @@ func checkTCPService(servTCP servTCP, retryMap map[string]int) (servTCP, map[str
 			if conn != nil {
 				servTCP.Ports[pk].Status = "up"
 				retryMap[serviceName] = 0
-				conn.Close()
+				// Check error from conn.Close()
+				if cerr := conn.Close(); cerr != nil {
+					log.Println("error closing connection:", cerr)
+				}
 			}
 		}
 	}

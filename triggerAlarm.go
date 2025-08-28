@@ -29,7 +29,10 @@ func triggerAlarm(retryMap map[string]int) {
 				if err != nil {
 					log.Println(err)
 				}
-				file.Close()
+				err = file.Close()
+				if err != nil {
+					log.Println(err)
+				}
 			}
 		}
 	} else {

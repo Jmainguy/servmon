@@ -20,12 +20,19 @@ func toFile(file, data string) {
 		log.Println(err)
 		return
 	}
-	w.Flush()
+	err = w.Flush()
+	if err != nil {
+		log.Println(err)
+		return
+	}
 	err = f.Sync()
 	if err != nil {
 		log.Println(err)
 		return
 	}
-	f.Close()
-
+	err = f.Close()
+	if err != nil {
+		log.Println(err)
+		return
+	}
 }

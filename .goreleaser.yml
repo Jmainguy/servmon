@@ -34,8 +34,8 @@ dockers:
   -
     use: buildx
     image_templates:
-    - "push.soh.re/servmon:{{ .Tag }}-arm64"
-    - "push.soh.re/servmon:latest-arm64"
+    - "zot.soh.re/servmon:{{ .Tag }}-arm64"
+    - "zot.soh.re/servmon:latest-arm64"
     extra_files:
     - template.html
     goarch: arm64

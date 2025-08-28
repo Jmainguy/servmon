@@ -30,7 +30,7 @@ podman run --name servmon -d \
   -v $(pwd)/monitor.yml:/monitor.yml \
   --env SLACK_TOKEN=xoxb-1986333393-gRNl6nANyVXhSGKJGDc9QHsa \
   --env SLACK_CHANNEL=C02U1PAFP8Q \
-  hub.soh.re/servmon:latest-arm64
+  zot.soh.re/servmon:latest-arm64
 ```
 
 ## Example

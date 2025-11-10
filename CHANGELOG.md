@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Jmainguy/servmon/compare/v1.0.0...v1.0.1) (2025-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/gin-gonic/gin to v1.11.0 ([#37](https://github.com/Jmainguy/servmon/issues/37)) ([067048f](https://github.com/Jmainguy/servmon/commit/067048fd7a39650da1c3e29b3388592e9b30d348))
+
 ## [1.0.0](https://github.com/Jmainguy/servmon/compare/v0.1.2...v1.0.0) (2025-08-28)
 
 

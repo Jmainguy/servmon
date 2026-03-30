@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Jmainguy/servmon/compare/v1.0.1...v1.0.2) (2026-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#39](https://github.com/Jmainguy/servmon/issues/39)) ([4d503b9](https://github.com/Jmainguy/servmon/commit/4d503b931e2675fa55fb55aeb2ba28d149b37734))
+
 ## [1.0.1](https://github.com/Jmainguy/servmon/compare/v1.0.0...v1.0.1) (2025-11-10)
 
 

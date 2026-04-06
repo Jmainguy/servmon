@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Jmainguy/servmon/compare/v1.0.2...v1.0.3) (2026-04-06)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/slack-go/slack to v0.21.0 ([#41](https://github.com/Jmainguy/servmon/issues/41)) ([0142ad4](https://github.com/Jmainguy/servmon/commit/0142ad488869b93d3e9b26a0a6803c33cf85f736))
+
 ## [1.0.2](https://github.com/Jmainguy/servmon/compare/v1.0.1...v1.0.2) (2026-03-30)
 
 
